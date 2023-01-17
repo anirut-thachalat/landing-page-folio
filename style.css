@@ -1,0 +1,154 @@
+*{
+ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+/* navbar------------------------------------*/
+
+.section-left{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6e6d6d;
+    border-right:2px solid #6b6969;
+    
+}
+
+.section-left .logo{
+
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: orangered;    
+
+}
+.section-left ul{
+
+      margin-bottom: 150px;
+}
+.section-left ul li{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    line-height: 3rem;
+    cursor: pointer;
+    transition: 0.4s;
+    border-bottom: 1px solid rgb(203, 173, 173);
+   
+}
+.section-left ul li:hover{
+    
+    color: #333333;
+    background-color: #fff;
+}
+
+/* content---------------------------------- */
+
+.section-right{ 
+    background-color: #dedada;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.section-right .content{
+
+    width: 100%;
+    padding: 0 20px; 
+    margin-top: 150px;
+}
+
+.section-right .content .name{
+
+ display: flex;
+ text-transform: uppercase;
+ margin-bottom: 25px;
+
+  
+}
+.section-right .content .title{
+
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.section-right .content #name{
+
+    font-size: 16px;
+    text-transform: lowercase;
+    margin-left: 10px;
+    color: orangered;
+}
+
+.btn{
+    
+    width: 100%;
+   justify-content:center ;
+    display: flex;
+    margin-top: 80px;
+}
+.btn button{
+
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: orangered;
+    cursor: pointer;
+    transition: .4;
+}
+.btn button:hover{
+
+    background-color: #333333;
+    color: orangered;
+}
+
+
+/* img-------------------------------------------- */
+
+.picture{
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.picture img{
+    
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 8px 5px 9px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+    
+@media  screen and (max-width: 500px ){
+     .section-right{
+
+        display: flex;
+        flex-direction: column;
+     }
+}
